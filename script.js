@@ -12,6 +12,9 @@ window.onload = function() {
         { name: 'ファーストリテイリング', marketCap: 7614111 },
     ];
 
+    // 時価総額で降順にソート
+    data.sort((a, b) => b.marketCap - a.marketCap);
+
     // Chart.jsのデータ形式に変換
     const labels = data.map(d => d.name);
     const marketCaps = data.map(d => d.marketCap);
