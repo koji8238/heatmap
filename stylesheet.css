@@ -13,10 +13,14 @@ h1 {
 }
 
 #marketCapChart {
+    
     margin-top: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    width: 80%;  /* 画面幅の80% */
+    height: 400px;  /* 高さを400pxに設定 */
 }
+
 
 /*
 * {
