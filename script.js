@@ -1,15 +1,15 @@
 window.onload = function() {
     const data = [
-        { name: '日本オラクル', marketCap: 1852641 },
-        { name: '日本マクドナルドホールディングス', marketCap: 805738 },
-        { name: '東映アニメーション', marketCap: 718200 },
-        { name: 'キーエンス', marketCap: 11455000 },
-        { name: 'ソフトバンクグループ', marketCap: 16243000 },
-        { name: 'トヨタ自動車', marketCap: 26631500 },
-        { name: '三菱UFJフィナンシャル・グループ', marketCap: 6500340 },
-        { name: 'リクルートホールディングス', marketCap: 8396438 },
-        { name: '東京エレクトロン', marketCap: 8342280 },
-        { name: 'ファーストリテイリング', marketCap: 7614111 },
+        { name: 'ソニーグループ', marketCap: 211553 },
+        { name: '任天堂', marketCap: 132855 },
+        { name: '日立製作所', marketCap: 182959 },
+        { name: 'キーエンス', marketCap: 163557 },
+        { name: 'ソフトバンクグループ', marketCap: 138341 },
+        { name: 'トヨタ自動車', marketCap:  469663 },
+        { name: '三菱UFJフィナンシャル・グループ', marketCap: 238759 },
+        { name: 'リクルートホールディングス', marketCap: 180327 },
+        { name: '三井住友フィナンシャルグループ', marketCap: 151800 },
+        { name: 'ファーストリテイリング', marketCap: 162388 },
     ];
 
     // 時価総額で降順にソート
