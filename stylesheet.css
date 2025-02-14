@@ -5,15 +5,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f4f4f9;
 }
 
 h1 {
     margin: 20px 0;
 }
 
-#chart {
-    width: 80%;
-    height: 600px;
+#marketCapChart {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 /*
