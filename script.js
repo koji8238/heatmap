@@ -58,6 +58,9 @@ function parseCSV(csvText) {
     const headers = rows.shift().split(',').map(h => h.replace(/"/g, '')); // ヘッダーのダブルクォートを削除
 
     return rows.map(row => {
+        // 数字の間のカンマを削除
+        row = row.replace(/(\d),(\d)/g, '$1$2');
+        
         const values = row.split(',').map(v => v.replace(/"/g, '')); // 各値のダブルクォートを削除
         return {
             name: values[1], // 銘柄名
