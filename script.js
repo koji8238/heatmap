@@ -1,5 +1,5 @@
 window.onload = function() {
-    const csvUrl = 'https://koji8238.github.io/heatmap/data.csv'; 
+    const csvUrl = 'https://koji8238.github.io/heatmap/screener_result.csv'; 
 
     fetch(csvUrl)
         .then(response => response.text()) // CSVをテキストとして取得
@@ -50,6 +50,23 @@ window.onload = function() {
     
 };
 
+
+
+// CSVをパースしてオブジェクトの配列に変換
+function parseCSV(csvText) {
+    const rows = csvText.trim().split('\n'); // 行ごとに分割
+    const headers = rows.shift().split(',').map(h => h.replace(/"/g, '')); // ヘッダーのダブルクォートを削除
+
+    return rows.map(row => {
+        const values = row.split(',').map(v => v.replace(/"/g, '')); // 各値のダブルクォートを削除
+        return {
+            name: values[1], // 銘柄名
+            marketCap: parseFloat(values[11].replace(/,/g, '')) * 1_000_000 // 時価総額(百万円)のカンマを除去し円単位に変換
+        };
+    });
+}
+
+/*
 // CSVをパースしてオブジェクトの配列に変換
 function parseCSV(csvText) {
     const rows = csvText.trim().split('\n'); // 行ごとに分割
@@ -63,3 +80,4 @@ function parseCSV(csvText) {
         };
     });
 }
+*/
