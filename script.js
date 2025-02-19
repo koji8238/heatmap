@@ -64,7 +64,7 @@ function parseCSV(csvText) {
         const values = row.split(',').map(v => v.replace(/"/g, '')); // 各値のダブルクォートを削除
         return {
             name: values[1], // 銘柄名
-            marketCap: parseFloat(values[11].replace(/,/g, '')) * 1_000_000 // 時価総額(百万円)のカンマを除去し円単位に変換
+            marketCap: parseFloat(values[6].replace(/,/g, '')) * 1_000_000 // 時価総額(百万円)のカンマを除去し円単位に変換
         };
     });
 }
