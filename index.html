@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>東証プライム市場 時価総額カルトグラム</title>
-    <meta name="description" content="東証プライム市場の上位銘柄の時価総額を可視化したカルトグラムを表示します。">
-    <meta name="keywords" content="東証プライム市場, 時価総額, カルトグラム, 株式, グラフ">
+    <title>東証プライム市場 時価総額ランキング</title>
+    <meta name="description" content="東証プライム市場の上位銘柄の時価総額ランキングを、可視化したカルトグラムで表示します。">
+    <meta name="keywords" content="東証プライム市場, 時価総額,ランキング, カルトグラム, 株式, グラフ">
     
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -25,9 +25,19 @@
     
     
 <body>
-    <h1>東証プライム市場 時価総額カルトグラム</h1>
+    <header>
+    <div class="container">
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="https://koji8238.github.io/heatmap/">TOP</a>
+        <a href="https://koji8238.github.io/heatmap/sub/theme_index.html#">メニュー</a>
+      </div>
+    </div>
+  </header>
+    
+    <h1>東証プライム市場 時価総額ランキング</h1>
     <canvas id="marketCapChart" width="600" height="400"></canvas>
-
+    <h3>東証プライム市場の各銘柄の時価総額ランキングを、カルトグラムで表します。</h3>
     <script src="script.js"></script>
 </body>
 </html>
