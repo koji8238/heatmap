@@ -69,18 +69,3 @@ function parseCSV(csvText) {
     });
 }
 
-/*
-// CSVをパースしてオブジェクトの配列に変換
-function parseCSV(csvText) {
-    const rows = csvText.trim().split('\n'); // 行ごとに分割
-    const headers = rows.shift().split(','); // 最初の行をヘッダーとする
-
-    return rows.map(row => {
-        const values = row.split(',');
-        return {
-            name: values[0],
-            marketCap: parseInt(values[1], 10) // 数値として扱う
-        };
-    });
-}
-*/
