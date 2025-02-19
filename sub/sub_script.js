@@ -98,7 +98,6 @@ window.onload = function() {
       const ctx = canvas.getContext('2d');
       new Chart(ctx, config);
 
-      console.log("業種「${industry}」のグラフを作成しました")
     });
   })
   .catch(error => console.error('CSVの読み込みエラー:', error));
